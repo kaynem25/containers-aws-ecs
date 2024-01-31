@@ -1,0 +1,21 @@
+on ubuntu machine
+
+#docker build
+docker build -t project-image
+
+#docker run
+docker run -d -p --name project-container project-image
+
+#lists docker
+docker ps
+
+-in AWS ECR, Create repository
+-connect using AWS CLI 
+docker tag project-name    --instruction given in ECR view push commands
+docker push 		   --instruction given in ECR view push commands
+
+
+IN ECS
+-create task definition
+-create cluster
+-create service
